@@ -5,50 +5,6 @@
 
 ############################### 2-ANALYSE COMPLETE ####################################
 
-#####-------------------------------------DUREE-----------------------------------#####
-# CALCULONS LA MOYENNE-----------------------------------------------------------------
-  moyenne_dure <- mean(DataFrame$Durée)
-  print(moyenne_dure)
-# CALCULONS LA VARIANCE----------------------------------------------------------------
-  variance_dure <- var(DataFrame$Durée)
-  print(variance_dure)
-# CALCULONS L'EQUART-TYPE--------------------------------------------------------------
-  eqrttyp_dure <- sd(DataFrame$Durée)
-  print(eqrttyp_dure)
-# CALCULONS LA MEDIANE-----------------------------------------------------------------
-  mediane_dure <- median(DataFrame$Durée)
-  print(mediane_dure)
-# CALCULONS LE COEFFICIENT DE VARIATION------------------------------------------------
-  cv_dure <- 100*(eqrttyp_dure/moyenne_dure)
-  print(cv_dure)
-# REPRESENTONS L'HISTOGRAME DES DUREES-------------------------------------------------
-  hist(DataFrame$Durée,main="Histogramme des durées (en s)",col="blue",xlab="Durées",ylab="fréquences")
-# RESUMER DES DUREES-------------------------------------------------------------------
-  summary(DataFrame$Durée)
-  
-  
-#####-----------------------------------MONTANT-----------------------------------#####
-# CALCULONS LA MOYENNE-----------------------------------------------------------------
-  moyenne_mont <- mean(DataFrame$Montant)
-  print(moyenne_mont)
-# CALCULONS LA VARIANCE----------------------------------------------------------------
-  variance_mont <- var(DataFrame$Montant)
-  print(variance_mont)
-# CALCULONS L'EQUART-TYPE--------------------------------------------------------------
-  eqrttyp_mont <- sd(DataFrame$Montant)
-  print(eqrttyp_mont)
-# CALCULONS LA MEDIANE-----------------------------------------------------------------
-  mediane_mont <- median(DataFrame$Montant)
-  print(mediane_mont)
-# CALCULONS LE COEFFICIENT DE VARIATION------------------------------------------------
-  cv_mont <- 100*(eqrttyp_mont/moyenne_mont)
-  print(cv_mont)
-# REPRESENTONS L'HISTOGRAME DES MONTANTS-----------------------------------------------
-  hist(DataFrame$Montant,main="Histogramme des montants",col="red",xlab="montants",ylab="fréquences")
-# RESUMER DES MONTANTS-----------------------------------------------------------------
-  summary(DataFrame$Montant)
-  
-
 #####-----------------------------------HEURES------------------------------------#####
 # CALCULONS LA MOYENNE-----------------------------------------------------------------
   moyenne_heur <- mean(DataFrame$Heure)
@@ -69,3 +25,47 @@
   hist(DataFrame$Heure,main="Histogramme des heures",col="pink",xlab="heures (en min)",ylab="fréquences")
 # RESUMER DES HEURES-------------------------------------------------------------------
   summary(DataFrame$Heure)
+
+#####-------------------------------------DUREE-----------------------------------#####
+# CALCULONS LA MOYENNE-----------------------------------------------------------------
+  moyenne_dure <- mean(DataFrame$Durée)
+  print(moyenne_dure)
+# CALCULONS LA VARIANCE----------------------------------------------------------------
+  variance_dure <- var(DataFrame$Durée)
+  print(variance_dure)
+# CALCULONS L'EQUART-TYPE--------------------------------------------------------------
+  eqrttyp_dure <- sd(DataFrame$Durée)
+  print(eqrttyp_dure)
+# CALCULONS LA MEDIANE-----------------------------------------------------------------
+  mediane_dure <- median(DataFrame$Durée)
+  print(mediane_dure)
+# CALCULONS LE COEFFICIENT DE VARIATION------------------------------------------------
+  cv_dure <- 100*(eqrttyp_dure/moyenne_dure)
+  print(cv_dure)
+# REPRESENTONS L'HISTOGRAME DES DUREES-------------------------------------------------
+  hist(DataFrame$Durée,main="Histogramme des durées",col="blue",xlab="Durées (en s)",ylab="fréquences")
+# RESUMER DES DUREES-------------------------------------------------------------------
+  summary(DataFrame$Durée)
+  
+#####-----------------------------------MONTANT-----------------------------------#####
+# CALCULONS LA MOYENNE-----------------------------------------------------------------
+  moyenne_mont <- mean(DataFrame$Montant)
+  print(moyenne_mont)
+# CALCULONS LA VARIANCE----------------------------------------------------------------
+  variance_mont <- var(DataFrame$Montant)
+  print(variance_mont)
+# CALCULONS L'EQUART-TYPE--------------------------------------------------------------
+  eqrttyp_mont <- sd(DataFrame$Montant)
+  print(eqrttyp_mont)
+# CALCULONS LA MEDIANE-----------------------------------------------------------------
+  mediane_mont <- median(DataFrame$Montant)
+  print(mediane_mont)
+# CALCULONS LE COEFFICIENT DE VARIATION------------------------------------------------
+  cv_mont <- 100*(eqrttyp_mont/moyenne_mont)
+  print(cv_mont)
+# REPRESENTONS L'HISTOGRAME DES MONTANTS-----------------------------------------------
+  hist(DataFrame$Montant,main="Histogramme des montants",col="red",xlab="montants (en $)",ylab="fréquences")
+# RESUMER DES MONTANTS-----------------------------------------------------------------
+  summary(DataFrame$Montant)
+  
+
