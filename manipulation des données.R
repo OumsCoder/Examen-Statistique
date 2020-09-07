@@ -22,7 +22,9 @@
   cv_dure <- 100*(eqrttyp_dure/moyenne_dure)
   print(cv_dure)
 # REPRESENTONS L'HISTOGRAME DES DUREES-------------------------------------------------
-  hist(DataFrame$Durée,main="Histograme des durées",col="blue",xlab="Durées",ylab="fréquences")
+  hist(DataFrame$Durée,main="Histogramme des durées (en s)",col="blue",xlab="Durées",ylab="fréquences")
+# RESUMER DES DUREES-------------------------------------------------------------------
+  summary(DataFrame$Durée)
   
   
 #####-----------------------------------MONTANT-----------------------------------#####
@@ -41,8 +43,10 @@
 # CALCULONS LE COEFFICIENT DE VARIATION------------------------------------------------
   cv_mont <- 100*(eqrttyp_mont/moyenne_mont)
   print(cv_mont)
-# REPRESENTONS L'HISTOGRAME DES MONTANTS-------------------------------------------------
-  hist(DataFrame$Montant,main="Histograme des montants",col="red",xlab="montants",ylab="fréquences")
+# REPRESENTONS L'HISTOGRAME DES MONTANTS-----------------------------------------------
+  hist(DataFrame$Montant,main="Histogramme des montants",col="red",xlab="montants",ylab="fréquences")
+# RESUMER DES MONTANTS-----------------------------------------------------------------
+  summary(DataFrame$Montant)
   
 
 #####-----------------------------------HEURES------------------------------------#####
@@ -62,4 +66,6 @@
   cv_heur <- 100*(eqrttyp_heur/moyenne_heur)
   print(cv_heur)
 # REPRESENTONS L'HISTOGRAME DES HEURES-------------------------------------------------
-  hist(DataFrame$Heure,main="Histograme des heures",col="red",xlab="heures",ylab="fréquences")
+  hist(DataFrame$Heure,main="Histogramme des heures",col="pink",xlab="heures (en min)",ylab="fréquences")
+# RESUMER DES HEURES-------------------------------------------------------------------
+  summary(DataFrame$Heure)
